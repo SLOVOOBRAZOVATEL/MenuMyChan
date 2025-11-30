@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📸 Фотографирую мир глазами (и не только)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 4rem 1rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+        .bio, .all-works { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .gallery-item img { width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s; display: block; }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-item a { display: block; text-decoration: none; }
+        .all-works { text-align: center; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        .all-works a { display: inline-block; background: rgba(0,0,0,0.8); color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-size: 1.2em; font-weight: bold; transition: all 0.3s; }
+        .all-works a:hover { background: rgba(0,0,0,1); transform: scale(1.05); }
+        footer { background: rgba(0,0,0,0.9); color: white; text-align: center; padding: 1rem; }
+        footer a { color: white; text-decoration: none; font-weight: bold; }
+        h1, h2 { margin-bottom: 1rem; }
+        p { margin-bottom: 1rem; }
+        @media (max-width: 768px) { 
+            .gallery { grid-template-columns: 1fr; }
+            header { padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📸 Мое увлечение фотографией</h1>
+    </header>
+    <div class="container">
+        <section class="bio">
+            <h2>О себе и пути в фотографию</h2>
+            <p>Меня зовут Влад, я люблю глазами. Еще в детстве я любил брать у родителей "мыльнницу" и фиксировать цепляющие виды, события</p>
+            <p>Начинал как и все с мобильной фотографии, последние года использовал более серьезную технику, в планах покупка цифровой камеры sony.</p>
+            <p>Люблю street photo, природу и портреты. Нахожу в кадре историю, ищу свет и люблю строить композицию</p>
+        </section>
+        <section>
+            <h2>Фотоохота 2025</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="https://disk.yandex.com.am/d/j069lQqIL-hjPA" target="_blank">
+                        <img src="images/photo1.jpg" alt="Хакасия">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://disk.yandex.com.am/d/nznYXBDYzSOdVQ" target="_blank">
+                        <img src="images/photo2.jpg" alt="Заброшенный лагерь">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="https://disk.yandex.com.am/d/4dzGI0iIUGfjFA" target="_blank">
+                        <img src="images/photo3.jpg" alt="Рэп-концерт">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="all-works">
+            <h2>📂 Все мои работы</h2>
+            <p>Полная галерея фотографий и видео</p>
+            <a href="https://disk.yandex.com.am/d/MWRM6rY6U5jJdw" target="_blank">Открыть Яндекс.Диск →</a>
+        </section>
+    </div>
+    <footer><a href="https://t.me/tolko_tvoi_msk">← В меню канала</a></footer>
+</body>
+</html>
