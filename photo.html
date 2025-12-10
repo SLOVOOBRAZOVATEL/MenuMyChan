@@ -4,37 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📸 Фотографирую мир глазами (и не только)</title>
-    <!-- Подключение Indie Flower -->
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
-  <style>
+    <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-  font-family:  'Indie Flower', cursive; 
-  min-height: 100vh; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
-  color: white; 
-  text-align: center; 
-  padding: 2rem; 
-  position: relative; /* чтобы позиционировать псевдоэлемент */
-  overflow: hidden; /* чтобы ничего не выступало за границы */
-}
-
-/* добавляем псевдоэлемент для размытой картинки */
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('images/phmenu.jpg') center/cover no-repeat;
-  filter: blur(8px);
-  z-index: -1; /* чтобы было позади текста */
-}
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; background: #f4f4f4; }
         header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 4rem 1rem; }
         .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
         .bio, .all-works { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 2rem; }
